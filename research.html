@@ -60,13 +60,21 @@
         .main-subheader {
             display: flex;
             flex-direction: column;
-            margin-bottom: 3rem;
+            margin-bottom: 2rem;
             justify-content: center;
             align-items: center;
         }
+
+        .main-subheader div {
+            align-items: center;
+            display: flex;
+        }
+
         .main-subheader__page-header {
             text-align: center;
             margin-bottom: 1rem;
+            justify-content: center;
+            align-items: center;
         }
         .main-subheader__link {
             background-color: #5ebec1;
@@ -78,16 +86,22 @@
             display: inline-block;
             font-size: 16px;
             max-width: 18em;
-            margin-top: 1rem;
+            margin-top: 2rem;
+            border-radius: 3px;
         }
 
         .main-subheader__link:hover {
             background-color: #27fdc7;
         }
+        .main-subheader__image {
+            max-width: 6em;
+            padding-top: 2rem;
+        }
+
         .main-iframe {
             display: flex;
             justify-content: center;
-            height: 80%;
+            height: 70%;
         }
     </style>
 </head>
@@ -96,20 +110,26 @@
         <nav class="main-header__nav">
             <ul class="main-header__item-list">
                 <li class="main-header__item">
-                    <a href="/">To Do</a>
+                    <a href="/health">To Do</a>
                 </li>
                 <li class="main-header__item">
-                    <a class="active" href="/research">Research</a>
+                    <a class="active" href="/health/research">Research</a>
                 </li>
             </ul>
         </nav>
     </header>
 
     <div class="main-subheader">
-        <h1>Let's find out something interesting</h1>
+        <h1 class="main-subheader__page-header">Let's see a short scientific article from reliable source</h1>
     </div>
     <div class="main-iframe">
-        <iframe src="https://pdfs.semanticscholar.org/9810/5f68726ab981d3a915b2922349edada832a1.pdf" width="96%"></iframe>
+        <iframe src="https://pdfs.semanticscholar.org/9810/5f68726ab981d3a915b2922349edada832a1.pdf" width="100%"></iframe>
+    </div>
+    <div class="main-subheader">
+        <div>
+            <a class="main-subheader__link" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=poradnia+chorób+piersi+kraków">Start Looking</a>
+            <img class="main-subheader__image" src="https://i.ibb.co/2ywpt51/Png-Item-1282099.png">
+        </div>
     </div>
 </body>
 </html>
